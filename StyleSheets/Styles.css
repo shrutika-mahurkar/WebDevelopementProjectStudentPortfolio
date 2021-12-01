@@ -1,0 +1,191 @@
+/**/
+/*Style for body*/
+body{
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;   
+    background-color: #ffffff;
+}
+/*style for heading h1*/
+h1{
+   color:navy;
+   padding: 20px;
+   text-transform: uppercase;
+   text-align: center; 
+}
+/* centering image and making it circular */
+.Image-center{
+    display:block;
+    margin-left:  auto;
+    margin-right: auto;
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px 5px #161616 ;
+    background-color:white;
+}
+
+/*Styling images in list*/
+.liImage-center{
+    
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+    box-shadow: 1px 1px 8px 5px #161616 ;
+}
+
+/*styling main container */
+#main-box {
+     
+    /* Firefox 3.6+ */
+     background-image: -moz-linear-gradient(#ffffff, #b3bbbb,#838a8a);
+    /* Safari 4+, Chrome 1+ */
+    background-image: -webkit-linear-gradient(#ffffff, #b3bbbb,#838a8a);
+    /* Safari 5.1+, Chrome 10+ */
+    background-image: -webkit-linear-gradient(#ffffff, #b3bbbb,#838a8a); 
+   
+    background-color: #66cccc; 
+    border :none;
+    border-width: 5px;
+    box-sizing: border-box;
+    display: block;
+    box-shadow:1px 1px 8px 5px #000000;
+    position: relative;    
+   }
+
+   /* styling box which contains details*/
+   #inner-box{
+    margin-left: 200px;
+    padding-left: 10px;
+   }
+   p.para_design{
+    height: 10%;
+    width: 40%;
+    background-color: ivory;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    box-shadow: 1px 1px 3px 3px #4A98FF ;
+    color: rgb(6, 23, 119);    
+
+}
+
+/*styling video*/
+iframe{
+    width :40% ;
+    height :50%;
+}
+
+/*styling navigation bar*/
+#nav-bar{
+   background-color: rgba(0, 0, 0, 0.671);
+   text-align: left;
+   margin: 0;
+   width: 200px;
+   height: 100%;
+   position: absolute;
+   display: table-cell;
+   
+   } 
+/*styling links in navigation bar*/
+  #nav-bar a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+/* selecting nav icon*/
+  #nav-bar a.active{
+      background-color: #166363;
+      color: #ffffff;
+  }
+
+/*changing colour of icon on hovering*/
+  #nav-bar a:hover{
+    background-color: #5ac5c5;
+    color: #ffffff;
+}
+
+  
+/*set table */
+table.edu-table {
+    border: 1px solid #000000;
+    width: 90%;
+    height: 30%;
+    text-align: center;
+    
+  }
+  /*style td and th*/
+  table.edu-table td, table.edu-table th {
+    
+    padding: 4px 7px;
+  }
+
+  /*style table body and  td*/
+  table.edu-table tbody td {
+    font-size: 13px;
+    color: #080000;
+  }
+  /*style even numbered cell*/
+  table.edu-table tr:nth-child(even) {
+    background: #5AC5C5;
+  }
+
+  /*style thead*/
+  table.edu-table thead {
+    background: #000000;
+    
+  }
+  /*style thead th*/
+  table.edu-table thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #E6E6E6;
+    text-align: center;
+    border-left: 1px solid #0c0c0c;
+  }
+  
+  table.edu-table thead th:first-child {
+    border-left: none;
+  }
+  
+  /*change text colur and font style according to device screen*/
+  @media (max-width:700px) {
+    body,p.para_design{
+        color: rgb(194, 22, 22);
+        font-style: italic;
+    }
+    
+    
+    
+}
+/* invisble images according to device screen*/
+@media (max-width:700px)
+{
+.Image-center,img.center,.liImage-center{
+ visibility: hidden;
+
+} 
+}
+
+/*change background colour according to device screen*/
+@media (max-width:700px) {
+ div#inner-box{
+ background-color: yellow;
+ background-image: -moz-linear-gradient(#5e6633, #bdcc66,#F4F5BA);
+ /* Safari 4+, Chrome 1+ */
+background-image: -webkit-linear-gradient(#5e6633, #bdcc66,#F4F5BA);
+ /* Safari 5.1+, Chrome 10+ */
+ background-image: -webkit-linear-gradient(#5e6633, #bdcc66,#F4F5BA); 
+ /* Opera 11.10+ */
+background-image: linear-gradient(#5e6633, #bdcc66,#F4F5BA);
+ box-sizing: border-box;
+ display: block;
+ }
+ 
+}
+
+  
